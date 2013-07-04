@@ -25,6 +25,7 @@ var fs = require('fs');
 var rest = require('restler');
 var csv = require('csv');
 var accounting = require('accounting');
+
 var CSVFILE_DEFAULT = "market-research.csv";
 var SYMBOLS_DEFAULT = ["GOOG", "FB", "AAPL", "YHOO", "MSFT", "LNKD", "CRM"];
 var COLUMNS_DEFAULT = 'snj1pr'; // http://greenido.wordpress.com/2009/12/22/yahoo-finance-hidden-api
@@ -92,3 +93,5 @@ if(require.main == module) {
 }
 
 exports.marketResearch = marketResearch;
+
+sys.print("done");
